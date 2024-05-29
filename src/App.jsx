@@ -15,7 +15,7 @@ const [image, setImage] = useState('')
     <>
       <main className='w-full relative'>
         <div onClick={() => setShowModal(false)} className={`w-full h-full absolute bg-black opacity-40 z-[100] ${showModal ? '' : 'hidden'}`}></div>
-        <div className={`h-full w-fit middle left-1/2 top-[60%] items-center fixed z-[200] ${showModal ? '' : 'hidden'}`}>
+        <div className={`h-full md:w-fit w-full middle left-1/2 top-3/4 md:top-[60%] items-center fixed z-[200] ${showModal ? '' : 'hidden'}`}>
           <img className='' src={`./${image}`} alt="" />
         </div>
         <Navbar />
